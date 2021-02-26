@@ -1,0 +1,261 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: clamp(1.2rem, -0.875rem + 1.333vw, 1.5rem);
+  overflow: hidden;
+  background-color: rgb(26, 27, 31);
+  color: white;
+  font-family: "comic Sans ms";
+}
+
+.main-body {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+}
+
+.left-section {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.right-section {
+  width: 60%;
+  transform: scale(0);
+  transition: transform 300ms ease-in-out;
+}
+.logoutButton{
+    text-decoration: none;
+    color: orange;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 0px white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.image-friend {
+  width: 80px;
+  height: 75px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 0px white;
+  margin: 5px;
+}
+
+.top-section {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+}
+
+.bottom-section {
+  height: 85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.user-profile-and-username {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  padding: 0px 10px 0px 10px;
+  background-color: rgb(26, 27, 31);
+}
+
+.search-bar {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  flex: 10;
+  background-color: rgb(218, 209, 209);
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 10px 0px 0px 10px;
+  color: black;
+}
+
+.search {
+  flex: 1;
+  background-color: rgb(218, 209, 209);
+  border: none;
+  outline: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.view-friend {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.view-friend:hover,
+.view-friend:focus {
+  background: rgb(39, 37, 37);
+  color: orange;
+}
+
+.friend-username {
+  margin-left: 10px;
+  font-family: "comic Sans ms";
+}
+
+.friend-username:hover {
+    color: orange;
+}
+
+.hr {
+  border: 0.5px solid rgb(196, 189, 189);
+}
+.openOption {
+  float: right;
+}
+
+.fa-sign-out-alt,
+.fa-palette,
+.fa-address-card,
+.fa-cog {
+  color: white;
+}
+
+.client-user-username {
+  display: hidden;
+}
+
+.friend-info {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-elements {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fa-plus-circle {
+  color: rgb(50, 50, 160);
+}
+
+.message-input {
+  width: 80%;
+  background-color: rgb(211, 219, 213);
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.fa-thumbs-up {
+  color: rgb(50, 50, 160);
+}
+
+.like-or-submit {
+  background: none;
+  border: none;
+}
+
+.client-friend-profile-and-name {
+  display: flex;
+  background-color: inherit;
+}
+
+.client-friend-profile-and-name p {
+  margin: 10px 5px;
+}
+
+.fa-search {
+background-color: inherit;}
+
+.client-friend-profile-and-back {
+    background-color: inherit;
+}
+
+
+.fa-address-card {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.fa-chevron-left {
+  transform: scale(0);
+}
+
+.attach-files {
+  position: relative;
+  width: 50px;
+  overflow: hidden;
+}
+
+.file-input {
+  background: none;
+  opacity: 0;
+}
+
+.fa-plus-circle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  pointer-events: none;
+}
+
+.logoutButton{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-adjust,
+ .fa-user-circle,
+ .fa-long-arrow-alt-left,
+ .fa-moon,
+ .fa-lightbulb{
+  color: white;
+}
+
+.text:hover,
+.text:focus {
+  color: rgb(160, 159, 156);
+  cursor: pointer;
+}
+.text {
+  color: rgb(241, 159, 6);
+  font-size: 1.3rem
+  font-family: "comic Sans ms";
+}
+.extra-options {
+  clear: left;
+  float: left;
+  min-width: 150px;
+  background-color: rgb(31, 29, 29);
+  transition: 500ms ease-in-out;
+  border-radius: 2px;
+  transform: scale(0);
+  padding: 5px;
+  position: absolute;
+  font-size: 1.5rem;
+}
+#menu-option {
+  color: black;
+  font-size: 1.2rem;
+}

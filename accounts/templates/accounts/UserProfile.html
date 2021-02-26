@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/self-xss.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="content">
+
+        <div class="logo">
+            <a><img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-logo-template-real-estate-apartment-condo-house-buildings-and-architecture-vector-png-image_3636077.jpg" class="edit-image"></a>
+        </div>
+
+        <div class="editor">
+        <div class="editor-content">
+            <h1>Edit profile</h1>
+            <hr>
+
+            <div class="profile-name-language">
+                <a><img class="edit-client-image" src="{{ userProfile }}"></a>
+                <form class="name-language" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="text" name="user" placeholder=" User Name" value="{{ username }}" id="user-username">
+                    <input type="file" name="userImage" class="invisible-file">
+                    <button class="change-profile-pic" id="new-profile-pic-input">Change Profile Pic</button>
+                </form>
+            </div>
+            <hr>
+
+            <div class="profile-name-language">
+                <a><img class="edit-client-image" src="https://www.srmist.edu.in/sites/centre-for-statistics/files/images/Centre-for-Statistics.jpg"></a>
+                <div class="name-language">
+                    <button class="change-profile-pic">Statistics</button>
+                    <button class="change-profile-pic del">Delete Statistics</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="closing-div">
+                <button class="btn" id="save-btn">Save Changes</button>
+                <a href="{% url 'login' %}"><button class="btn">Cancel</button></a>
+                <button class="btn del">Delete Profile</button>
+            </div>
+
+
+        </div>
+        </div>
+
+    </div>
+</body>
+<script src="{% static 'js/self-xx.js' %}"></script>
+</html>

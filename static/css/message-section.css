@@ -1,0 +1,120 @@
+
+
+.message-section {
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.received-message {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* client-friend */
+
+.client-friend-message {
+  float: left;
+  clear: left;
+  display: flex;
+  word-break: anywhere;
+  max-width: 95%;
+}
+
+.client-friend-message-pic {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.client-friend-message-content {
+  margin: 10px 5px;
+  background-color: rgb(102, 95, 95);
+  padding: 5px;
+  border-radius: 0px 20px 20px 20px;
+}
+
+.client-friend-message-content-image {
+  max-width: 70%;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+}
+
+/* client */
+
+.client-message {
+  float: right;
+  clear: right;
+  display: flex;
+  max-width: 95%;
+  word-break: anywhere;
+}
+
+.client-message-pic {
+  float: right;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: 2px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
+.client-message-content {
+  margin-top: 10px;
+  background-color: rgb(41, 159, 214);
+  padding: 5px;
+  border-radius: 20px 0px 20px 20px;
+}
+
+.message-content-image {
+  max-width: 70%;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .client-message {
+    max-width: 70%;
+  }
+
+  .client-message-pic,
+  .client-friend-message-pic {
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .client-friend-message {
+    max-width: 70%;
+  }
+}
+
+.video {
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 500px;
+}
+
+#dynamic-username {
+    background-color: inherit;
+}
+
+.active-user-profile {
+    color: green;
+}
+
+.openUrl {
+    cursor: pointer;
+    z-index: 100;
+}

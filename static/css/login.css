@@ -1,0 +1,155 @@
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgba(0, 0, 0, 0.918);
+      }
+
+      .main-box {
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgb(4, 187, 187);
+        margin: 100px auto;
+      }
+
+      .input-box {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-left: 0px;
+      }
+
+      input {
+        border: 3px solid black;
+        border-radius: 5px;
+        outline: none;
+        font-size: 20px;
+        font-family: "comic Sans ms";
+        padding: 10px;
+        width: 90%;
+        margin: 10px auto;
+        margin-bottom: 20px;
+        margin-left: 0px;
+      }
+      input:focus {
+        box-shadow: 0px 0px 20px rgb(5, 209, 49);
+      }
+
+      .submit {
+        border: 3px solid black;
+        border-radius: 10px;
+        outline: none;
+        margin-top: 5px;
+        font-size: 25px;
+        font-family: "comic Sans ms";
+        padding: 3px;
+        background-color: rgb(145, 59, 123);
+        color: white;
+        border: none;
+        transition: 500ms ease-in-out;
+      }
+      .introduction-box {
+        width: 100%;
+        height: 10vh;
+        background: linear-gradient(
+          45deg,
+          rgb(218, 211, 211),
+          rgb(173, 169, 169)
+        );
+        color: rgba(0, 0, 0, 0.911);
+        font-family: "comic Sans ms";
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h3 {
+        font-family: "comic Sans ms";
+        font-size: 1rem;
+      }
+      .submit:hover {
+        background-color: rgb(4, 187, 187);
+        border-radius: 0px;
+        color: black;
+      }
+      .option{
+        font-family: "comic Sans ms";
+        font-size: 1rem;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 500ms ease-in-out;
+      }
+      .option:hover{
+        transform: scale(1.1);
+      }
+
+      .content-email{
+      font-size: 30px;
+      font-family: "comic Sans ms";
+      transition: 500ms ease-in-out;
+      }
+
+      .email-div{
+        position: relative;
+        cursor: pointer;
+      }
+
+      .label-email{
+        position: absolute;
+        left: 1%;
+        bottom: 30%;
+        pointer-events: none;
+        transition: 500ms ease-in-out;
+      }
+
+      .email-div input:focus + .label-email, .email-div input:valid + .label-email{
+        bottom: 50%;
+        transform: scale(0.5);
+        color: gray;
+      }
+
+      .password1-div{
+        position: relative;
+      }
+
+       .label-password{
+        position: absolute;
+        left: 1%;
+        bottom: 30%;
+        pointer-events: none;
+        transition: 500ms ease-in-out;
+      }
+
+      .password1-div input:focus + .label-password, .password1-div input:valid + .label-password{
+        bottom: 50%;
+        transform: scale(0.5);
+        color: gray;
+      }
+
+       .declined{
+        box-shadow: 0px 0px 10px rgb(255, 50, 50);
+      }
+      .accepted{
+        box-shadow: 0px 0px 10px rgb(50, 255, 50);
+      }
+      .errors{
+        font-family: "comic Sans ms";
+        color: white;
+        background-color: rgb(245, 120, 10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }

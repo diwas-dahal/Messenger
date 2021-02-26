@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Register </title>
+</head>
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<body>
+
+<div class="main-box">
+  <div class="introduction-box">
+    <h1>Create Account</h1>
+  </div>
+  <div class="input-box">
+    <form method="POST" action="" class="form">
+
+      <div class="input bars">
+        {% csrf_token %}
+        <div class="username-div">
+        {{form.username}}
+
+        </div>
+        <div class="email-div">
+          {{form.username}}
+        </div>
+        <div class="password1-div">
+        {{form.password1}}
+
+        </div>
+        <div class="password2-div">
+        {{form.password2}}
+        </div>
+      <input type="Submit" class="submit" />
+      </div>
+    </form>
+    <div class="option">
+      <p>Already have an account ?. <a href="{% url 'login' %}"> Sign in</a></p>
+    </div>
+
+  </div>
+</div>
+</body>
+<script src="{% static 'js/register.js' %}"></script>
+</html>

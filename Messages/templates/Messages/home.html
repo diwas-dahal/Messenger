@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c134227426.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/message-section.css' %}">
+</head>
+<body>
+    <div class="main-body">
+    <div class="left-section">
+
+        <div class="top-section">
+
+            <div class="user-profile-and-username">
+                <img src="http://diwasdahal.pythonanywhere.com/media/20201219_092125.jpg" class="image openUrl" id="user-image-top">
+                <i class="fas fa-ellipsis-v" id="menu-option"></i>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button class="search">
+                <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <section class="bottom-section">
+            <div class="Global">
+                <div class="view-friend" id="global" imagelink="https://cdn5.vectorstock.com/i/thumb-large/95/14/planet-earth-in-space-vector-26549514.jpg">
+                <img src="https://cdn5.vectorstock.com/i/thumb-large/95/14/planet-earth-in-space-vector-26549514.jpg" class="image-friend openUrl"  username="global">
+                <p class="friend-username">global</p>
+                </div>
+            </div>
+            <div class="client-friend-display">
+            </div>
+        </section>
+    </div>
+    <div class="right-section">
+
+        <div class="friend-info">
+            <div class="client-friend-profile-and-name">
+            <img src="https://cdn5.vectorstock.com/i/thumb-large/95/14/planet-earth-in-space-vector-26549514.jpg" class="image openUrl" id="dynamic-image" username="Global">
+            <p id="dynamic-username">Global</p>
+            </div>
+
+            <div class="client-friend-profile-and-back">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-address-card"></i>
+            </div>
+        </div>
+
+        <section class="message-section">
+        </section>
+
+        <form class="input-elements" method="POST" action="add-message" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="attach-files">
+                <input type="file" class="file-input" name="file">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <input type="text" autocomplete="off" name="content" placeholder="Type a message" class="message-input" onkeyup="showsubmit(event)" >
+            <button type="submit" class="like-or-submit"><i class="fas fa-thumbs-up"></i></button>
+        </form>
+
+    </div>
+
+    </div>
+
+    <!-- Extra options -->
+    <div class="extra-options">
+    </div>
+</body>
+<script src="{% static 'js/functions.js' %}"></script>
+<script src="{% static 'js/Messages.js' %}"></script>
+</html>
